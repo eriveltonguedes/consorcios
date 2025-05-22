@@ -25,6 +25,13 @@ dir /ad /b > folder_list.txt
   /ad: lists directories only.
   /b: bare format (just names, no details).
 
+cd C:\Users\YourUsername\Documents
+Run the following command to list only directories and save them to a text file:
+
+dir /ad /b > folder_list.txt
+  /ad: lists directories only.
+  /b: bare format (just names, no details).
+
 > folder_list.txt: saves output to a file.
 
 The file folder_list.txt will appear in the current folder.
@@ -41,4 +48,3 @@ Run this command:
 Get-ChildItem -Directory | Select-Object -ExpandProperty Name | Out-File "folder_list.txt"
 
 This creates a file folder_list.txt with just the names of all subfolders.
-
